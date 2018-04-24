@@ -12,6 +12,7 @@ load("aula-02/data/dados_exercicio.RData")
 ##         quero ver uma saída na Console.
 ### # ####
 
+str(acessos_alunos)
 
 
 ### 2 ###
@@ -20,12 +21,16 @@ load("aula-02/data/dados_exercicio.RData")
 ## Dica: Vimos um exemplo no mesmo material sobre estruturas de dados
 ### # ###
 
+length(acessos_alunos)
 
 
 ### 3 ###
 ## Utilizando o seu código de aluno da Uniritter como nome de um valor da lista, imprima uma linha informando quantos acessos
 ## você fez. A linha deve ser impressa na Console, com um texto que diga o seu código de aluno e o valor conforme o seguinte exemplo:
 ## "O aluno <alu...> realizou N acessos."
+
+(acessos_alunos$alu201410068) 
+paste("o aluno<alu201410068> realizou", acessos_alunos$alu201410068, "acessos")
 
 ## Dica 1: Utilize a função paste() para composição do texto que será impresso. 
 ## Dica 2: Vimos exemplos disto nos materiais dos tipos numéricos e das estruturas de dados.
@@ -36,6 +41,14 @@ load("aula-02/data/dados_exercicio.RData")
 ### 4 ###
 ## A operação abaixo cria um vetor com todas as quantidades de acessos por aluno.
 acessos <- unlist(acessos_alunos)
+
+list(acessos>acessos_alunos$alu201410068)
+
+which(acessos>acessos_alunos$alu201410068)
+
+paste("Quem acessou mais que eu", )
+
+
 
 ## Após a criação deste vetor, determine quantos colegas fizeram mais acessos que você.
 ## Faça isso em 3 etapas: 

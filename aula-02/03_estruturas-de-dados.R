@@ -70,6 +70,10 @@ which(seq_10_from_2 > 6) # Índices
 # Exiba-os, por favor :: a indexação também pode ser feita através de vetores lógicos, retornando todas as posições indexadas por TRUE
 seq_10_from_2[seq_10_from_2 > 6]
 
+v2 <- c(1, 11, 5, 14, 6, 8, 7)
+v2[v2 > 6]
+
+
 # Os 3 primeiros elementos, pela sua posição
 seq_10_from_2[1:3]
 
@@ -92,7 +96,7 @@ seq(from=0, to=5, by=.5)
 #' 2. A possibilidade de aninhar outras estruturas
 #' 
 ## ------------------------------------------------------------------------
-resposta <- list(7, '*', 6, '=', list(42), c("quarenta", "e", "dois"))
+namedlist <- list(7, '*', 6, '=', list(number=42), spelled="quarenta", "e", "dois")
 
 # A função glimpse apresenta uma prévia do conteúdo da lista passada como parâmetro. A função `str` atende o mesmo propósito.
 dplyr::glimpse(resposta)
